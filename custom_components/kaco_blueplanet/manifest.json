@@ -1,0 +1,11 @@
+{
+  "domain": "kaco_blueplanet",
+  "name": "Kaco Blueplanet",
+  "version": "0.1.0",
+  "documentation": "https://github.com/KingKarl237/Kaco-Blueplanet",
+  "requirements": [],
+  "codeowners": ["@KingKarl237"],
+  "iot_class": "local_polling",
+  "logo": "logo.png",
+  "config_flow": true
+}
