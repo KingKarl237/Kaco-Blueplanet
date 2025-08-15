@@ -36,3 +36,41 @@ custom_components/kaco_blueplanet/manifest.json
 custom_components/kaco_blueplanet/sensor.py
 .. etc
 ```
+
+## Sensors
+
+### Inverter Sensors
+
+| Name                | Description                                               |
+|---------------------|----------------------------------------------------------|
+| Power AC            | Current AC power of the inverter                         |
+| Day Energy          | Energy yield of the current day                          |
+| Total Energy        | Total energy yield since commissioning                    |
+| WR Hours            | Operating hours of the inverter                          |
+| Voltage S1          | Voltage at PV string 1                                   |
+| Voltage S2          | Voltage at PV string 2                                   |
+| Current S1          | Current at PV string 1                                   |
+| Current S2          | Current at PV string 2                                   |
+| AC Voltage L1       | AC voltage phase L1                                      |
+| AC Voltage L2       | AC voltage phase L2                                      |
+| AC Voltage L3       | AC voltage phase L3                                      |
+| AC Current L1       | AC current phase L1                                      |
+| AC Current L2       | AC current phase L2                                      |
+| AC Current L3       | AC current phase L3                                      |
+| WR Temp             | Inverter temperature                                     |
+| Power Factor        | Power factor                                             |
+| WR Error            | Inverter error status                                    |
+| String 1 Power      | Calculated power PV string 1                             |
+| String 2 Power      | Calculated power PV string 2                             |
+
+### Meter Sensors
+
+| Name                    | Description                                         |
+|-------------------------|-----------------------------------------------------|
+| Meter Power AC          | Current AC power at the meter                       |
+| Meter Energy In Today   | Energy fed in today (unknown)                                |
+| Meter Energy Out Today  | Energy drawn today  (unknown)                                |
+| Meter Energy In         | Total energy fed in     (unknown)                            |
+| Meter Energy Out        | Total energy drawn      (unknown)                            |
+| Meter Mode              | Meter operating mode (unknown)                                |
+| Meter Enabled           | Status whether the meter is enabled                 |
