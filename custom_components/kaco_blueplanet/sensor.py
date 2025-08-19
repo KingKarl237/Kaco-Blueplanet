@@ -40,8 +40,8 @@ INVERTER_DEFINITIONS = [
 
 METER_DEFINITIONS = [
     ("Meter Power AC", "pac", "W", "power", "measurement", lambda v: -v),
-    ("Meter Energy In Today", "itd", "kWh", "energy", "total_increasing", lambda v: int(v)/10),
-    ("Meter Energy Out Today", "otd", "kWh", "energy", "total_increasing", lambda v: int(v)/10),
+    ("Meter Energy In Today", "itd", "kWh", "energy", "total_increasing", lambda v: int(v)/100),
+    ("Meter Energy Out Today", "otd", "kWh", "energy", "total_increasing", lambda v: int(v)/100),
     ("Meter Energy In", "iet", "kWh", "energy", "total_increasing", lambda v: int(v)/10),
     ("Meter Energy Out", "oet", "kWh", "energy", "total_increasing", lambda v: int(v)/10),
     ("Meter Mode", "mod", None, None, None, lambda v: v),
