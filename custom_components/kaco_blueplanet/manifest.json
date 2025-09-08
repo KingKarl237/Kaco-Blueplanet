@@ -7,5 +7,6 @@
   "codeowners": ["@KingKarl237"],
   "iot_class": "local_polling",
   "logo": "logo.png",
-  "config_flow": true
+  "config_flow": true,
+  "render_readme": true
 }
