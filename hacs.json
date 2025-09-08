@@ -1,3 +1,9 @@
 {
-  "name": "Kaco Blueplanet"
+  "name": "Kaco Blueplanet",
+  "domain": "kaco",
+  "documentation": "https://github.com/KingKarl237/Kaco-Blueplanet",
+  "render_readme": true,
+  "codeowners": ["KingKarl237"],
+  "issue_tracker": "https://github.com/KingKarl237/Kaco-Blueplanet/issues",
+  "version": "0.1.0"
 }
