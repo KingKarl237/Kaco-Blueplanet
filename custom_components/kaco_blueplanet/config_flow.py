@@ -37,14 +37,22 @@ class KacoBlueplanetConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
 class OptionsFlowHandler(config_entries.OptionsFlow):
     def __init__(self, config_entry):
-        self.config_entry = config_entry
+        self.entry_id = config_entry.entry_id
 
     async def async_step_init(self, user_input=None):
+        entry = self.hass.config_entries.async_get_entry(self.entry_id)
+
+        # Erst options, dann data, dann Default
+        current_interval = entry.options.get(
+            CONF_SCAN_INTERVAL,
+            entry.data.get(CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL),
+        )
+
         if user_input is not None:
             return self.async_create_entry(title="", data=user_input)
 
         data_schema = vol.Schema({
-            vol.Optional(CONF_SCAN_INTERVAL, default=self.config_entry.data.get(CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL)): int
+            vol.Optional(CONF_SCAN_INTERVAL, default=current_interval): int
         })
 
         return self.async_show_form(step_id="init", data_schema=data_schema)
