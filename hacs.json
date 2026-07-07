@@ -1,6 +1,6 @@
 {
   "name": "Kaco Blueplanet",
-  "domain": "kaco",
+  "domain": "kaco_blueplanet",
   "documentation": "https://github.com/KingKarl237/Kaco-Blueplanet",
   "render_readme": true,
   "codeowners": ["KingKarl237"],
